@@ -4,7 +4,7 @@
 
 ### Goals
 
-- Practice web scrapping
+- Practice data extraction through web scrapping and APIs
 - Create a MVP for a song recommender based on the business case described below
 
 
@@ -28,6 +28,12 @@ CSV files of the scraped songs
 #### Song recommender
 
 Streamlit application (work in progress)
+
+### Technlogies used
+
+Python
+Spotify API
+Streamlit
 
 
 ### Business goal: Gnod case study
