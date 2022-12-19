@@ -1,45 +1,77 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# Lab | Web Scraping Multiple Pages
+# Project: Song Recommender
 
-#### Business goal:
+### Goals
 
-- Check the `case_study_gnod.md` file.
-- Make sure you've understood the big picture of your project:
+- Practice web scrapping
+- Create a MVP for a song recommender based on the business case described below
 
-  - the goal of the company (`Gnod`),
-  - their current product (`Gnoosic`),
-  - their strategy, and
-  - how your project fits into this context.
 
-  Re-read the business case and the e-mail from the CTO, take a look at the flowchart and create an initial Trello board with the tasks you think you'll have to accomplish.
+### Content
 
-#### Instructions 
+#### Notebooks
 
-#### Prioritize the MVP
+1 - Scraping for the current popular songs (Hot songs)
 
-In the previous lab, you had to scrape data about "hot songs". It's critical to be on track with that part, as it was part of the request from the CTO.
+2 - Scraping spotify playlists and songs audio features
 
-If you couldn't finish the first lab, use this time to go back there.
+3 - Clustering songs
 
-#### Expand the project
+4 - MVP Song recommender
 
-If you're done, you can try to expand the project on your own. Here are a few suggestions:
 
-- Find other lists of hot songs on the internet and scrape them too: having a bigger pool of songs will be awesome!
-- Apply the same logic to other "groups" of songs: the best songs from a decade or from a country / culture / language / genre.
-- Wikipedia maintains a large collection of lists of songs: https://en.wikipedia.org/wiki/Lists_of_songs
+#### CSV Files
 
-#### Practice web scraping
+CSV files of the scraped songs
 
-As you've seen, scraping the internet is a skill that can get you all sorts of information. Here are some little challenges that you can try to gain more experience in the field:
+#### Song recommender
 
-- Retrieve an arbitrary Wikipedia page of "Python" and create a list of links on that page: `url ='https://en.wikipedia.org/wiki/Python'`
-- Find the number of titles that have changed in the United States Code since its last release point: `url = 'http://uscode.house.gov/download/download.shtml'`
-- Create a Python list with the top ten FBI's Most Wanted names: `url = 'https://www.fbi.gov/wanted/topten'`
-- Display the 20 latest earthquakes info (date, time, latitude, longitude and region name) by the EMSC as a pandas dataframe: `url = 'https://www.emsc-csem.org/Earthquake/'`
-- List all language names and number of related articles in the order they appear in [wikipedia.org](wikipedia.org): `url = 'https://www.wikipedia.org/'`
-- A list with the different kind of datasets available in [data.gov.uk](data.gov.uk): `url = 'https://data.gov.uk/'`
-- Display the top 10 languages by number of native speakers stored in a pandas dataframe: `url = 'https://en.wikipedia.org/wiki/List_of_languages_by_number_of_native_speakers'`
+Streamlit application (work in progress)
+
+
+### Business goal: Gnod case study
+
+#### Scenario
+
+You have been hired as a Data Analyst for "Gnod".
+
+"Gnod" is a site that provides recommendations for music, art, literature and products based on collaborative filtering algorithms. Their flagship product is the _music recommender_, which you can try at [www.gnoosic.com](www.gnoosic.com). The site asks users to input 3 bands they like, and computes similarity scores with the rest of the users. Then, they recommend to the user bands that users with similar tastes have picked.
+
+"Gnod" is a small company, and its only revenue stream so far are adds in the site. In the future, they would like to explore partnership options with music apps (such as _Deezer_, _Soundcloud_ or even _Apple Music_ and _Spotify_). However, for that to be possible, they need to expand and improve their recommendations.
+
+That's precisely where you come. They have hired you as a Data Analyst, and they expect you to bring a mix of technical expertise and business mindset to the table.
+
+Jane, CTO of Gnod, has sent you an email assigning you with your first task.
+
+#### Task(s)
+
+> This is an e-mail Jane - CTO of Gnod - sent over your inbox in the first weeks working there.
+
+_Dear xxxxxxxx,
+We are thrilled to welcome you as a Data Analyst for *Gnoosic*!_
+
+_As you know, we are trying to come up with ways to enhance our music recommendations. One of the new features we'd like to research is to recommend songs (not only bands). We're also aware of the limitations of our collaborative filtering algorithms, and would like to give users two new possibilities when searching for recommendations:_
+
+- _Songs that are actually similar to the ones they picked from an acoustic point of view._
+- _Songs that are popular around the world right now, independently from their tastes._
+
+_Coming up with the perfect song recommender will take us months - no need to stress out too much. In this first week, we want you to explore new data sources for songs. The Internet is full of information and our first step is to acquire it do an initial exploration. Feel free to use APIs or directly scrape the web to collect as much information as possible from popular songs. Eventually, we'll need to collect data from millions of songs, but we can start with a few hundreds or thousands from each source and see if the collected features are useful._
+
+_Once the data is collected, we want you to create clusters of songs that are similar to each other. The idea is that if a user inputs a song from one group, we'll prioritize giving them recommendations of songs from that same group._
+
+_On Friday, you will present your work to me and Marek, the CEO and founder. Full disclosure: I need you to be very convincing about this whole song-recommender, as this has been my personal push and the main reason we hired you for!_
+
+_Be open minded about this process: we are agile, and that means that we define our products and features on-the-go, while exploring the tools and the data that's available to us. We'd love you to provide your own vision of the product and the next steps to be taken._
+
+_Lots of luck and strength for this first week with us!_
+
+_-Jane_
+
+
+
+
+
+
 
 
