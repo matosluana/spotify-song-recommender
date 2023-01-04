@@ -7,35 +7,6 @@
 - Practice data extraction through web scrapping and APIs
 - Create a MVP for a song recommender based on the business case described below
 
-
-### Content
-
-#### Notebooks
-
-1 - Scraping for the current popular songs (Hot songs)
-
-2 - Scraping spotify playlists and songs audio features
-
-3 - Clustering songs
-
-4 - MVP Song recommender
-
-
-#### CSV Files
-
-CSV files of the scraped songs
-
-#### Song recommender
-
-Streamlit application (work in progress)
-
-### Technlogies used
-
-Python
-Spotify API
-Streamlit
-
-
 ### Business goal: Gnod case study
 
 #### Scenario
@@ -73,6 +44,44 @@ _Be open minded about this process: we are agile, and that means that we define 
 _Lots of luck and strength for this first week with us!_
 
 _-Jane_
+
+
+### Content
+
+#### Notebooks
+
+**01_Getting hot songs and scraping first songs:**
+In this notebook, I scraped multiple pages to get the 100 hot songs of the week and to get the most popular songs from the past 50 years.
+A first version of the song recommender was developed. This is capable of making a recommendation only if the song entered by the user is in the hot 100 songs. As per requirement, if this is the case another song from the hot 100 will be suggested.
+Finally, I have used the Spotify API to get audio features from the most popular songs of the last 50 years. These will be used later to build up the recommender.
+
+**02_Scraping Playlists from Spotify:**
+To expand the selection of songs that will be part of the recommender, I have used the Spotify API to collect several playlists and tracks and their respective audio features.
+
+**03_Clustering**
+The songs collected in steps 01 and 02 are put together and clustered usig KMeans.
+As outcome, now I have:
+A model to be used in the song recommender
+A dataset with thousands of songs which have been clustered based on their audio features
+
+**04_Song_recommender (MVP)**
+This is the main file. There are a few lines that update the list of hot songs, so that the recommender is always working with the latest top songs. Then, one can run the song recommender and it will:
+- Ask for confirmation that it got the right song based on the entry
+- Suggest a song based either on the hot 100 or on the clustered songs. A direct link to spotify is provided.
+
+
+#### CSV Files
+
+CSV files of the scraped songs
+
+
+### Technlogies used
+
+Python
+Web Scraping
+Spotify API
+
+
 
 
 
